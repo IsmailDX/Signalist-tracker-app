@@ -43,6 +43,7 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+/* Light Theme */
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -78,6 +79,7 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
 }
 
+/* Dark Theme */
 .dark {
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
@@ -112,7 +114,7 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-/* === CUSTOM COLOR THEME === */
+/* Custom variables made for tailwind */
 @theme {
   /* Extended Gray Scale */
   --color-gray-900: #050505;
@@ -179,7 +181,7 @@
     @apply text-xs md:text-lg font-bold text-gray-400 not-italic;
   }
   .auth-dashboard-preview {
-    @apply border-6 border-gray-800 left-0 hidden w-[1024px] h-auto max-w-none lg:block rounded-xl shadow-2xl;
+    @apply border-6 border-gray-800 left-0 hidden w-5xl h-auto max-w-none lg:block rounded-xl shadow-2xl;
   }
   .form-title {
     @apply text-4xl font-bold text-gray-400 mb-10;

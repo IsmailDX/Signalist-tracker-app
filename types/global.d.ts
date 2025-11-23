@@ -63,12 +63,6 @@ declare global {
     href: string;
   };
 
-  type SearchCommandProps = {
-    renderAs?: 'button' | 'text';
-    label?: string;
-    initialStocks: StockWithWatchlistStatus[];
-  };
-
   type WelcomeEmailData = {
     email: string;
     name: string;
@@ -180,9 +174,11 @@ declare global {
     open?: boolean;
     setOpen?: (open: boolean) => void;
     renderAs?: 'button' | 'text';
+    label?: string;
     buttonLabel?: string;
     buttonVariant?: 'primary' | 'secondary';
     className?: string;
+    initialStocks: StockWithWatchlistStatus[];
   };
 
   type AlertData = {

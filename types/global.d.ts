@@ -63,7 +63,6 @@ declare global {
     href: string;
   };
 
-
   type WelcomeEmailData = {
     email: string;
     name: string;

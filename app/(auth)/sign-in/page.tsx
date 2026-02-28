@@ -46,6 +46,17 @@ const SignIn = () => {
     <>
       <h1 className="form-title">Welcome Back</h1>
 
+      <p className="mt-2 text-muted-foreground text-xl">Demo Account</p>
+
+      <div className="my-3 rounded-lg bg-muted p-3 text-sm">
+        <p>
+          <strong>Email:</strong> geyil44782@pazuric.com
+        </p>
+        <p>
+          <strong>Password:</strong> Password123
+        </p>
+      </div>
+
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
         <InputField
           name="email"
